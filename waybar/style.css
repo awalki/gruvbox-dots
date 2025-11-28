@@ -1,0 +1,45 @@
+@define-color foreground #ebdbb2;
+@define-color foreground-inactive #928374;
+@define-color background #282828;
+@define-color background-alt #3c3836;
+
+* {
+    font-family: Mononoki Nerd Font;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    color: @foreground;
+    background-color: @background;
+}
+
+#workspaces button {
+    padding-left: 1em;
+    padding-right: 1.3em;
+    color: @foreground-inactive;
+}
+
+#workspaces button.active {
+    background-color: @background-alt;
+    border-radius: 3px;
+}
+
+#wireplumber,
+#bat,
+#tray,
+#usage,
+#net {
+    background-color: @background-alt;
+    border-radius: 3px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 0.3em;
+}
+
+#memory,
+#language {
+    margin-right: 0.8em;
+}
+
